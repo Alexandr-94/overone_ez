@@ -1,0 +1,11 @@
+f = open('1.txt', 'r', encoding='utf-8',)
+#print(*f)
+print(f.read(7))
+print(f)
+f.close()
+with open('1.txt', encoding='utf-8') as f:
+    #print(*f)
+    # print(f.read(7))
+    # print(f.readline())
+    # print(f.readline())
+    print(f.readlines())
